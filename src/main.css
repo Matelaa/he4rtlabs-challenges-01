@@ -7,6 +7,10 @@ p {
     margin: 10px 0px 10px 10px;
 }
 
+input {
+    margin: 10px 0px 10px 0px;
+}
+
 #container {
     display: flex;
     flex-direction: column;
@@ -18,4 +22,11 @@ p {
     margin: 10px;
     background-color: white;
     width: 960px;
+}
+
+#form {
+    width: 540px;
+    text-align: center;
+    justify-content: center;
+    background-color: green;
 }
