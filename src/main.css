@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 p {
@@ -15,13 +16,56 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blueviolet;
+    background-color: #960DFF;
+}
+
+#title {
+    color: black;
+    margin: 36px 0 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 2px solid black;
 }
 
 #especifications {
     margin: 10px;
-    background-color: white;
     width: 960px;
+}
+
+.card-espefications {
+    background-color: #7B1CFF;
+    margin-bottom: 28px;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 10px 0px black;
+    border: 2px solid white;
+
+}
+
+.name-especification {
+    margin: 16px;
+}
+
+.name-especification span {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.especification {
+    margin: 16px 16px 16px 30px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.especification span {
+    border-radius: 20px;
+    font-size: 14px;
 }
 
 #form {
