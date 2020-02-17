@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 10px 0px 10px 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+#especifications {
+    margin: 10px;
+    background-color: white;
+    width: 960px;
+}
