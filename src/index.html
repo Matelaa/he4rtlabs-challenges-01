@@ -51,21 +51,29 @@
       <div id="form">
         <form>
           <label for="valor-total-projeto">Valor Total do Projeto</label><br>
-          <input type="number" id="valor-total-projeto" name="valor-total-projeto"><br>
+          <input type="text" onkeypress="validateInputTotalProjeto(event)" id="valor-total-projeto" name="valor-total-projeto"><br>
           
           <label for="quantidade-horas-trabalhas-dia">Quantidade de Horas Trabalhadas por Dia</label><br>
-          <input type="number" min="1" max="24" onkeypress="return event.charCode >= 48 && event.charCode <= 57" id="quantidade-horas-trabalhas-dia" name="quantidade-horas-trabalhas-dia"><br>
+          <input type="text" maxlength="2" onkeypress="validateHorasInput(event)" id="quantidade-horas-trabalhas-dia" name="quantidade-horas-trabalhas-dia"><br>
           
           <label for="dias-efeitos-trabalhados-semana">Dias Efetivos Trabalhados na Semana</label><br>
-          <input type="number" min="1" max="7" id="dias-efeitos-trabalhados-semana" name="dias-efeitos-trabalhados-semana"><br>
+          <input type="text" maxlength="1" onkeypress="validateInputDiasSemana(event)" id="dias-efeitos-trabalhados-semana" name="dias-efeitos-trabalhados-semana"><br>
           
           <label for="dias-ferias-projeto">Dias de Férias pelo Projeto</label><br>
-          <input type="number" min="1" max="" id="dias-ferias-projeto" name="dias-ferias-projeto"><br>
+          <input type="text" maxlength="2" onkeypress="validateInputDiasFerias(event)" id="dias-ferias-projeto" name="dias-ferias-projeto"><br>
           
-          <input type="button" value="Calcular" onclick="alo()">
+          <input type="button" value="Calcular" onclick="calculate()">
         </form>
       </div>
     </div>
     <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script>
+      $(document).ready(function($){
+        $('#valor-total-projeto').mask('000,000,000,000,000.00', { reverse: true})
+        $('.value').mask('000,000,000,000,000.00', { reverse: true})
+      })
+    </script>
   </body>
 </html>
