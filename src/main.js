@@ -63,6 +63,6 @@ calculate = () => {
     if (isNaN(valorHora) || valorTotalTratado < 1) {
         valorFreelanceSpan.innerHTML = 'Preencha corretamente os campos'
     } else {
-        valorFreelanceSpan.innerHTML = `${valorHora.toFixed(2)}R$`
+        valorFreelanceSpan.innerHTML = `${valorHora.toFixed(2)}R$/h`
     }
 }
