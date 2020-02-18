@@ -48,22 +48,28 @@
         </div>
       </div>
       
-      <div id="form">
-        <form>
-          <label for="valor-total-projeto">Valor Total do Projeto</label><br>
-          <input type="text" onkeypress="validateInputTotalProjeto(event)" id="valor-total-projeto" name="valor-total-projeto"><br>
-          
-          <label for="quantidade-horas-trabalhas-dia">Quantidade de Horas Trabalhadas por Dia</label><br>
-          <input type="text" maxlength="2" onkeypress="validateHorasInput(event)" id="quantidade-horas-trabalhas-dia" name="quantidade-horas-trabalhas-dia"><br>
-          
-          <label for="dias-efeitos-trabalhados-semana">Dias Efetivos Trabalhados na Semana</label><br>
-          <input type="text" maxlength="1" onkeypress="validateInputDiasSemana(event)" id="dias-efeitos-trabalhados-semana" name="dias-efeitos-trabalhados-semana"><br>
-          
-          <label for="dias-ferias-projeto">Dias de Férias pelo Projeto</label><br>
-          <input type="text" maxlength="2" onkeypress="validateInputDiasFerias(event)" id="dias-ferias-projeto" name="dias-ferias-projeto"><br>
-          
-          <input type="button" value="Calcular" onclick="calculate()">
-        </form>
+      <div id="form-container">
+        <div id="form-card">
+          <form>
+            <label for="valor-total-projeto">Valor Total do Projeto</label><br>
+            <input class="input-form" type="text" onkeypress="validateInputTotalProjeto(event)" id="valor-total-projeto" name="valor-total-projeto"><br>
+            
+            <label for="quantidade-horas-trabalhas-dia">Quantidade de Horas Trabalhadas por Dia</label><br>
+            <input class="input-form" type="text" maxlength="2" onkeypress="validateHorasInput(event)" id="quantidade-horas-trabalhas-dia" name="quantidade-horas-trabalhas-dia"><br>
+            
+            <label for="dias-efeitos-trabalhados-semana">Dias Efetivos Trabalhados na Semana</label><br>
+            <input class="input-form" type="text" maxlength="1" onkeypress="validateInputDiasSemana(event)" id="dias-efeitos-trabalhados-semana" name="dias-efeitos-trabalhados-semana"><br>
+            
+            <label for="dias-ferias-projeto">Dias de Férias pelo Projeto</label><br>
+            <input class="input-form" type="text" maxlength="2" onkeypress="validateInputDiasFerias(event)" id="dias-ferias-projeto" name="dias-ferias-projeto"><br>
+            
+            <input class="input-button" type="button" value="Calcular" onclick="calculate()">
+          </form>
+        </div>
+
+        <div id="result-container">
+          <span>lala</span>
+        </div>
       </div>
     </div>
     <script src="./main.js"></script>
